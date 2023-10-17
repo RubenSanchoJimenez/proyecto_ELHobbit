@@ -1,0 +1,62 @@
+html body{
+margin: 0px;
+}
+body{
+background-image: url("img/fondo.jpg");
+background-size: cover; 
+background-attachment: fixed; 
+background-repeat: no-repeat;
+width: 100%;
+height: 100vh;
+color: white; 
+font-size: large;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+a{
+text-decoration: none;
+}
+main{
+background-color: rgba(139, 87, 29, 0.6);
+border-radius: 15px;
+padding: 20px;
+box-shadow: 5px 5px 10px #888888, -5px -5px 10px #888888;
+overflow: auto;
+width: 50%;
+height: 50%;
+margin: 300px auto;
+}
+nav{
+overflow: hidden;
+background-color: rgba(139, 87, 29, 0.6);
+position: sticky;
+text-align: center;
+}
+nav table{
+margin: 0 auto;
+}
+nav td{
+    height: 70px;
+}
+nav span{
+padding: 10px;
+background-color: rgb(182, 123, 56);
+margin: 10px 20px 10px 20px;
+width: 100px;
+text-align: center;
+font-weight: bolder;
+color: white;
+border-radius: 20px;
+box-shadow: 5px 5px 10px #888888;
+}
+nav span:hover{
+background-color: orange;
+}
+nav img{
+max-height: 70px;
+}
+footer{
+background-color: rgba(139, 87, 29, 0.6);
+overflow: hidden;
+padding: 20px;
+text-align: center;
+}
