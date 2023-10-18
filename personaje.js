@@ -12,7 +12,7 @@ export class Personaje{
         this.#clase = clase;
     }
     hablar(texto){
-        let textoMejorado = `<br/>"${this.#nombre}": "${texto}"`;
+        let textoMejorado = `<br/>${this.#nombre}: "${texto}"`;
         document.getElementById('divHistoria').innerHTML += textoMejorado;
     }
     coger(objeto){
@@ -29,4 +29,4 @@ export class Personaje{
         personaje.coger(objeto);
     }
 }
-import { Objeto } from "./objeto";
+import { Objeto } from "./objeto.js";

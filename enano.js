@@ -1,5 +1,5 @@
-import { Personaje } from "./Personaje.js";
-import { razaEnano as raza } from "./Razas.js";
+import { razaEnano as raza } from "./razas.js";
+import { Personaje } from "./personaje.js";
 
 export class Enano extends Personaje{
     

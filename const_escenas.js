@@ -1,8 +1,9 @@
 // Aquí se almacenan todas las elecciones posibles
-import { Escena } from "./Escena";
+import { Escena } from "./escena.js";
+import { bilbo } from "./const_personajes.js";
 
 // Escena 1
 const escena1 = new Escena("Escena 1");
-    // Agregar personajes
-escena1.agregarPersonaje
-    // Diálogos
+
+export {escena1}
+

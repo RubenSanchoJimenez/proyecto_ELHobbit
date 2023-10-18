@@ -1,5 +1,6 @@
 
-import { Escena } from "./Escena";
+import { escena1 } from "./const_escenas.js";
 
-const escena1 = new Escena("Escena 1");
-escena1.agregarPersonaje
+
+document.getElementById(('divHistoria').innerHTML += `<hr>`)
+
