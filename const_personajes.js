@@ -1,0 +1,1 @@
+// Aquí se almacenan todos los personajes posibles
