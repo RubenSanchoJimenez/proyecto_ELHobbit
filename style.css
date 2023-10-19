@@ -60,3 +60,22 @@ overflow: hidden;
 padding: 20px;
 text-align: center;
 }
+#boton {
+    display: flex; /* Muestra los botones en línea horizontal */
+    justify-content: center; /* Centra los botones horizontalmente */
+}
+
+.estiloso {
+    background-color: #3498db; /* Color de fondo */
+    color: #fff; /* Color de texto */
+    padding: 10px 20px; /* Aumenta el tamaño de los botones */
+    border: none; /* Elimina el borde */
+    border-radius: 5px; /* Agrega esquinas redondeadas */
+    margin: 10px; /* Espacio entre botones */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse sobre el botón */
+}
+
+  /* Estilos para cuando el mouse está sobre el botón */
+.estiloso:hover {
+    background-color: #2980b9; /* Cambia el color de fondo en hover */
+}

@@ -1,4 +1,5 @@
 // Clase Personaje
+import { Objeto } from "./objeto.js";
 
 export class Personaje{
     #nombre = null; // La # hace a un atributo privado
@@ -11,10 +12,17 @@ export class Personaje{
         this.#raza = raza;
         this.#clase = clase;
     }
-    hablar(texto){
-        let textoMejorado = `<br/>${this.#nombre}: "${texto}"`;
-        document.getElementById('divHistoria').innerHTML += textoMejorado;
-    }
+    hablar(frase) {
+        // Crear un elemento de párrafo
+        let dialogo = document.createElement("p");
+        dialogo.textContent = `${this.#nombre} : "${frase}"`;
+    
+        // Obtener el elemento divHistoria del documento HTML
+        let divHistoria = document.getElementById("divHistoria");
+    
+        // Agregar el elemento de párrafo al div
+        divHistoria.appendChild(dialogo);
+        }
     coger(objeto){
         this.#inventario.add(objeto);
     }
@@ -29,4 +37,3 @@ export class Personaje{
         personaje.coger(objeto);
     }
 }
-import { Objeto } from "./objeto.js";
