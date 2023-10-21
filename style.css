@@ -21,9 +21,9 @@ border-radius: 15px;
 padding: 20px;
 box-shadow: 5px 5px 10px #888888, -5px -5px 10px #888888;
 overflow: auto;
-width: 50%;
+width: 80%;
 height: 50%;
-margin: 300px auto;
+margin: 50px auto;
 }
 nav{
 overflow: hidden;
