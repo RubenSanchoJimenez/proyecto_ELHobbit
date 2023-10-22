@@ -78,7 +78,7 @@ export class Rama {
                     boton1.rename("Acertar");
                     boton2.rename("Fallar");
                     document.getElementById("1").onclick = () => {
-                        escena4.escena4_2();
+                        escena4.escena4_1();
                         boton1.ocultar();
                         boton2.ocultar();
                         boton3.ocultar();
