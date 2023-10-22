@@ -116,8 +116,8 @@ export class Rama {
 
         escena2.escena2_2();
         boton1.rename("Carretera de Olivenza - Autostop");
-        boton2.rename("Carretera de Valverde - Coche robado");
-        boton3.rename("Mérida - Tren");
+        boton2.rename("Mérida - Tren");
+        boton3.rename("Carretera de Valverde - Coche robado");
         // Define un nuevo controlador de evento para el elemento con ID "1" (anidado)
         document.getElementById("1").onclick = () => {
             
@@ -134,7 +134,7 @@ export class Rama {
             document.getElementById("1").onclick = () => {
 
                 // Llama al método escena4() de la instancia escena4
-                escena4.escena4_2();
+                escena4.escena4_1();
                 
                 // Oculta los elementos con IDs "1", "2" y "3"
                 boton1.ocultar();
@@ -164,7 +164,7 @@ export class Rama {
                 escena3_3.escena3_3_r2();
 
                     document.getElementById("1").onclick = () => {
-                        escena4.escena4_2();
+                        escena4.escena4_1();
                         boton1.ocultar();
                         boton2.ocultar();
                         boton3.ocultar();
