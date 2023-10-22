@@ -115,9 +115,9 @@ export class Rama {
             boton3.mostrar();
 
         escena2.escena2_2();
-        boton1.rename("Carretera de Olivenza - Autostop");
+        boton3.rename("Carretera de Olivenza - Autostop");
         boton2.rename("Mérida - Tren");
-        boton3.rename("Carretera de Valverde - Coche robado");
+        boton1.rename("Carretera de Valverde - Coche robado");
         // Define un nuevo controlador de evento para el elemento con ID "1" (anidado)
         document.getElementById("1").onclick = () => {
             
