@@ -181,11 +181,11 @@ export class Rama {
     rama3() {
         // Crea varias instancias de la clase Escena para representar diferentes escenas en la aplicación o juego
     let escena1 = new Escena('El inicio de una Locura');
-    let escena2 = new Escena('Matar a a arrebato');
+    let escena2 = new Escena('Matar a El Arrebato');
     let escena3_1 = new Escena('Slenderman Enamorado de Bilbo');
     let escena3_2 = new Escena('Llegada al concierto');
     let escena3_3 = new Escena('Cansados');
-    let escena4 = new Escena('Arrebato tiene mas entradas que el bernabeu');
+    let escena4 = new Escena('Arrebato tiene mas entradas que el Bernabeu');
 
     // Llama al método escena1() de la instancia escena1 para iniciar la aplicación en la primera escena
     escena1.escena1();
