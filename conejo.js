@@ -1,7 +1,7 @@
-import { razaRata as raza } from "./razas.js";
+import { razaConejo as raza } from "./razas.js";
 import { Animal } from "./animal.js";
 
-export class Raton extends Animal{
+export class Conejo extends Animal{
     
 
     #colorPelo = null;

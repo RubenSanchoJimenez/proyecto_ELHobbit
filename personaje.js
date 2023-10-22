@@ -15,7 +15,7 @@ export class Personaje{
     hablar(frase) {
         // Crear un elemento de párrafo
         let dialogo = document.createElement("p");
-        dialogo.innerHTML = `<span style="color: black; padding: 5px; border-radius: 5px; background-color: white;">${this.#nombre} :</span> "${frase}"`;
+        dialogo.innerHTML = `<span style="color: white; padding: 5px; border-radius: 5px; background-color: rgb(182, 123, 56);">${this.#nombre} :</span> "${frase}"`;
 
     
         // Obtener el elemento divHistoria del documento HTML

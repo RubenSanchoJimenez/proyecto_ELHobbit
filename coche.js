@@ -7,15 +7,15 @@ export class Coche{
     #clase = null;
     #inventario = new Set();
 
-    constructor(nombre, clase = null){
+    constructor(nombre, clase = null, anio){
         this.#nombre = nombre;
-        this.#anio = año;
+        this.#anio = anio;
         this.#clase = clase;
     }
     arrancar() {
         // Crear un elemento de párrafo
         let dialogo = document.createElement("p");
-        dialogo.innerHTML = `<span style="color: black; padding: 5px; border-radius: 5px; background-color: white;">${this.#nombre} :</span> "${"brnn"}"`;
+        dialogo.innerHTML = `<span style="color: white; padding: 5px; border-radius: 5px;">${this.#nombre} :</span> "${"BRRRNNN"}"`;
 
     
         // Obtener el elemento divHistoria del documento HTML

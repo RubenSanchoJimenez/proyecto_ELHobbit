@@ -5,7 +5,7 @@ export class ReyTroll extends Troll {
 
     aporrear() {
         let dialogo = document.createElement("p");
-        dialogo.innerHTML = `<span style="color: white; padding: 5px; border-radius: 5px; background-color: black;"> "${ReyTroll.#frase}"</span> `;
+        dialogo.innerHTML = `<span style="color: white; padding: 5px; border-radius: 5px; background-color: rgb(182, 123, 56);"> "${ReyTroll.#frase}"</span> `;
 
         // Obtener el elemento divHistoria del documento HTML
         let divHistoria = document.getElementById("divHistoria");

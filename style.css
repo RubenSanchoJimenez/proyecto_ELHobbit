@@ -21,7 +21,7 @@ border-radius: 15px;
 padding: 20px;
 box-shadow: 5px 5px 10px #888888, -5px -5px 10px #888888;
 overflow: auto;
-width: 80%;
+width: 50%;
 height: 50%;
 margin: 50px auto;
 }
@@ -55,16 +55,34 @@ nav img{
 max-height: 70px;
 }
 footer{
+position: abs;
 background-color: rgba(139, 87, 29, 0.6);
 overflow: hidden;
-padding: 20px;
+padding: 5px;
 text-align: center;
+}
+footer img{
+    height: 165px;
+}
+footer table{
+    margin: 0 auto;
+
+}
+footer td{
+    padding: 0px 40px;
 }
 #boton {
     display: flex; /* Muestra los botones en línea horizontal */
     justify-content: center; /* Centra los botones horizontalmente */
 }
-
+#boton button{
+    background-color: rgba(139, 87, 29);
+    box-shadow: 2px 2px 10px white;
+}
+#boton button:hover{
+    background-color: orange;
+    box-shadow: 3px 3px 10px rgb(170, 170, 170);
+}
 .estiloso {
     background-color: #3498db; /* Color de fondo */
     color: #fff; /* Color de texto */

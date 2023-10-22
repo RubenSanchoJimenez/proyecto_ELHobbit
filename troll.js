@@ -3,7 +3,6 @@ import { Personaje } from "./personaje.js";
 
 export class Troll extends Personaje{
     
-    //static rey = ' Thorin Escudo de roble';
 
     #colorPelo = null;
 
@@ -12,9 +11,9 @@ export class Troll extends Personaje{
         this.#colorPelo = colorPelo;
     }
     bostezar() {
-        let frase="AAAAAAHHHHA"
+        let frase="AAAAAAHHHHA";
         let dialogo = document.createElement("p");
-        dialogo.innerHTML = `<span style="color: white; padding: 5px; border-radius: 5px; background-color: black;"> El Troll bosteza:"${frase}"</span> `;
+        dialogo.innerHTML = `<span style="color: white; padding: 5px; border-radius: 5px; background-color: rgb(182, 123, 56);"> El Troll bosteza:</span>"${frase}" `;
 
         // Obtener el elemento divHistoria del documento HTML
         let divHistoria = document.getElementById("divHistoria");
