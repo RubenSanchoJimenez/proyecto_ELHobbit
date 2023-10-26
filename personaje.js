@@ -1,12 +1,20 @@
 // Clase Personaje
 import { Objeto } from "./objeto.js";
-
+/**
+ * Representa un personaje de la historia
+ */
 export class Personaje{
     #nombre = null; // La # hace a un atributo privado
     #raza = null;
     #clase = null;
     #inventario = new Set();
-
+    /**
+     * Constructor de la clase
+     * Inicializa los atributos de la clase
+     * @param {String} nombre El nombre del personaje
+     * @param {String} raza Raza del personaje
+     * @param {String} clase Clase del personaje
+     */
     constructor(nombre, raza, clase = null){
         this.#nombre = nombre;
         this.#raza = raza;
@@ -23,7 +31,11 @@ export class Personaje{
     
         // Agregar el elemento de párrafo al div
         divHistoria.appendChild(dialogo);
-        }
+    }
+    /**
+     * Se asigna objeto a personaje
+     * @param {Objeto} objeto 
+     */
     coger(objeto){
         this.#inventario.add(objeto);
     }

@@ -1,6 +1,10 @@
 import { Rama } from "./rama.js";
 import { Boton } from "./botones.js";
 
+/**
+ * Realizamos las declaraciones corresposndientes y asignamos los botones
+ */
+
 let rama1 = new Rama();
 let rama2 = new Rama();
 let rama3 = new Rama();
