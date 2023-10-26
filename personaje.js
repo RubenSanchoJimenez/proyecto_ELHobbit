@@ -39,6 +39,12 @@ export class Personaje{
     coger(objeto){
         this.#inventario.add(objeto);
     }
+    /**
+    * Transfiere un objeto del personaje actual a otro personaje.
+    * @param {Objeto} objeto - El objeto que se va a transferir.
+    * @param {Personaje} personaje - El personaje al que se le transfiere el objeto.
+    * @throws {string} Lanza una excepción si el objeto o el personaje no son válidos.
+    */
     pasar(objeto, personaje){
         if(!(objeto instanceof  Objeto)){
             throw 'Objeto inválido';

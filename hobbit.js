@@ -1,17 +1,27 @@
 import { razaHobbit as raza } from "./razas.js";
 import { Personaje } from "./personaje.js";
 
-
+/**
+ * Clase que representa a un hobbit en el juego.
+ * @extends Personaje
+ */
 export class Hobbit extends Personaje{
 
 
     #estatura = null;
-
+    /**
+     * Crea una instancia de la clase Hobbit.
+     * @param {string} nombre - El nombre del hobbit.
+     * @param {string|null} clase - La clase a la que pertenece el hobbit (opcional).
+     * @param {string} estatura - La estatura del hobbit.
+     */
     constructor(nombre, clase = null, estatura ){
         super(nombre, raza, clase);
         this.#estatura = estatura;
     }
-    
+    /**
+     * Hace que el hobbit eructe y muestra un mensaje en la historia.
+     */
     eructar() {
 
         let frase="brrrrrrrrrr";

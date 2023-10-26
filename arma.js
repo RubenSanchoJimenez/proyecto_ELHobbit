@@ -1,14 +1,22 @@
 import { Objeto } from "./objeto.js";
 
-
+/**
+ * Clase que representa un arma en el juego.
+ * @extends Objeto
+ */
 export class Arma extends Objeto{
 
     #nombre=null;
-    
+    /**
+     * Crea una instancia de la clase Arma.
+     * @param {string} nombre - El nombre del arma.
+     */
     constructor(nombre){
         super(nombre);
     }
-
+    /**
+     * Realiza un disparo con el arma y muestra un mensaje en la historia.
+     */
     disparar(){
         let frase="PUMMMM";
         let dialogo = document.createElement("p");

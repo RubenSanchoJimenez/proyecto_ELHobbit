@@ -1,6 +1,13 @@
+/**
+ * Clase que representa un narrador en el juego.
+ */
 export class Narrador {
 
     #nombre='Narrador'
+    /**
+     * Narra una frase y muestra un mensaje en la historia.
+     * @param {string} frase - La frase que el narrador va a narrar.
+     */
     narrar(frase) {
         // Crear un elemento de párrafo
         let dialogo = document.createElement("p");
