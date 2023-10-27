@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: script.js</title>
+    <title>JSDoc: Source: arma.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: script.js</h1>
+    <h1 class="page-title">Source: arma.js</h1>
 
     
 
@@ -26,44 +26,37 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>import { Rama } from './rama.js'
-import { Boton } from './botones.js'
+            <pre class="prettyprint source linenums"><code>import { Objeto } from './objeto.js'
 
 /**
- * Realizamos las declaraciones corresposndientes y asignamos los botones
+ * Clase que representa un arma en el juego.
+ * @extends Objeto
  */
+export class Arma extends Objeto {
+  #nombre = null
+  /**
+     * Crea una instancia de la clase Arma.
+     * @param {string} nombre - El nombre del arma.
+     */
+  constructor (nombre) {
+    super(nombre)
+  }
 
-const rama1 = new Rama()
-const rama2 = new Rama()
-const rama3 = new Rama()
-const boton1 = new Boton('1')
-const boton2 = new Boton('2')
-const boton3 = new Boton('3')
+  /**
+     * Realiza un disparo con el arma y muestra un mensaje en la historia.
+     */
+  disparar () {
+    const frase = 'PUMMMM'
+    const dialogo = document.createElement('p')
+    dialogo.innerHTML = `&lt;span style="color: white; padding: 5px; border-radius: 5px; background-color: rgb(182, 123, 56); "> Disparos:&lt;/span>"${frase}" `
 
-boton1.mostrar()
-boton1.rename('Rama 1')
-boton2.mostrar()
-boton2.rename('Rama 2')
-boton3.mostrar()
-boton3.rename('Rama 3')
-boton1.avanzarRama(() => {
-  rama1.rama1()
-  boton2.ocultar()
-  boton3.ocultar()
-  boton1.rename('continuar')
-})
-boton2.avanzarRama(() => {
-  rama2.rama2()
-  boton2.ocultar()
-  boton3.ocultar()
-  boton1.rename('continuar')
-})
-boton3.avanzarRama(() => {
-  rama3.rama3()
-  boton2.ocultar()
-  boton3.ocultar()
-  boton1.rename('continuar')
-})
+    // Obtener el elemento divHistoria del documento HTML
+    const divHistoria = document.getElementById('divHistoria')
+
+    // Agregar el elemento de párrafo al div
+    divHistoria.appendChild(dialogo)
+  }
+}
 </code></pre>
         </article>
     </section>

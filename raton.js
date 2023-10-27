@@ -1,13 +1,11 @@
-import { razaRata as raza } from "./razas.js";
-import { Animal } from "./animal.js";
+import { razaRata as raza } from './razas.js'
+import { Animal } from './animal.js'
 
-export class Raton extends Animal{
-    
+export class Raton extends Animal {
+  #colorPelo = null
 
-    #colorPelo = null;
-
-    constructor(nombre, clase = null, colorPelo = 'Blanca'){
-        super(nombre, raza, clase);
-        this.#colorPelo = colorPelo;
-    }
-}   
+  constructor (nombre, clase = null, colorPelo = 'Blanca') {
+    super(nombre, raza, clase)
+    this.#colorPelo = colorPelo
+  }
+}

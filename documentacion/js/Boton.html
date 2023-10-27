@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Class: Personaje</title>
+    <title>JSDoc: Class: Boton</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Class: Personaje</h1>
+    <h1 class="page-title">Class: Boton</h1>
 
     
 
@@ -28,9 +28,9 @@
 
 <header>
     
-        <h2><span class="attribs"><span class="type-signature"></span></span>Personaje<span class="signature">(nombre, raza, clase)</span><span class="type-signature"></span></h2>
+        <h2><span class="attribs"><span class="type-signature"></span></span>Boton<span class="signature">(idBoton)</span><span class="type-signature"></span></h2>
         
-            <div class="class-description">Representa un personaje de la historia</div>
+            <div class="class-description">Clase para representar un botón en una interfaz de usuario.</div>
         
     
 </header>
@@ -45,7 +45,7 @@
     
 
     
-    <h4 class="name" id="Personaje"><span class="type-signature"></span>new Personaje<span class="signature">(nombre, raza, clase)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="Boton"><span class="type-signature"></span>new Boton<span class="signature">(idBoton)</span><span class="type-signature"></span></h4>
     
 
     
@@ -53,7 +53,7 @@
 
 
 <div class="description">
-    Constructor de la claseInicializa los atributos de la clase
+    Crea una instancia de la clase Boton.
 </div>
 
 
@@ -79,8 +79,6 @@
         
 
         
-        <th>Default</th>
-        
 
         <th class="last">Description</th>
     </tr>
@@ -91,13 +89,13 @@
 
         <tr>
             
-                <td class="name"><code>nombre</code></td>
+                <td class="name"><code>idBoton</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">String</span>
+<span class="param-type">string</span>
 
 
             
@@ -106,68 +104,8 @@
             
 
             
-                <td class="default">
-                
-                </td>
-            
 
-            <td class="description last">El nombre del personaje</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>raza</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">String</span>
-
-
-            
-            </td>
-
-            
-
-            
-                <td class="default">
-                
-                </td>
-            
-
-            <td class="description last">Raza del personaje</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>clase</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">String</span>
-
-
-            
-            </td>
-
-            
-
-            
-                <td class="default">
-                
-                    null
-                
-                </td>
-            
-
-            <td class="description last">Clase del personaje</td>
+            <td class="description last">El ID del botón en el DOM.</td>
         </tr>
 
     
@@ -208,7 +146,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="personaje.js.html">personaje.js</a>, <a href="personaje.js.html#line6">line 6</a>
+        <a href="botones.js.html">botones.js</a>, <a href="botones.js.html#line4">line 4</a>
     </li></ul></dd>
     
 
@@ -249,7 +187,7 @@
         <h3 class="subsection-title">Classes</h3>
 
         <dl>
-            <dt><a href="Personaje.html">Personaje</a></dt>
+            <dt><a href="Boton.html">Boton</a></dt>
             <dd></dd>
         </dl>
     
@@ -271,7 +209,7 @@
     
 
     
-    <h4 class="name" id="coger"><span class="type-signature"></span>coger<span class="signature">(objeto)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="avanzarRama"><span class="type-signature"></span>avanzarRama<span class="signature">(rama)</span><span class="type-signature"></span></h4>
     
 
     
@@ -279,7 +217,7 @@
 
 
 <div class="description">
-    Se asigna objeto a personaje
+    Configura una acción a realizar cuando se hace clic en el botón.
 </div>
 
 
@@ -315,13 +253,13 @@
 
         <tr>
             
-                <td class="name"><code>objeto</code></td>
+                <td class="name"><code>rama</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type"><a href="Objeto.html">Objeto</a></span>
+<span class="param-type">function</span>
 
 
             
@@ -331,7 +269,7 @@
 
             
 
-            <td class="description last"></td>
+            <td class="description last">La función a ejecutar cuando se hace clic en el botón.</td>
         </tr>
 
     
@@ -372,7 +310,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="personaje.js.html">personaje.js</a>, <a href="personaje.js.html#line40">line 40</a>
+        <a href="botones.js.html">botones.js</a>, <a href="botones.js.html#line43">line 43</a>
     </li></ul></dd>
     
 
@@ -408,7 +346,7 @@
     
 
     
-    <h4 class="name" id="pasar"><span class="type-signature"></span>pasar<span class="signature">(objeto, personaje)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="mostrar"><span class="type-signature"></span>mostrar<span class="signature">()</span><span class="type-signature"></span></h4>
     
 
     
@@ -416,7 +354,7 @@
 
 
 <div class="description">
-    Transfiere un objeto del personaje actual a otro personaje.
+    Muestra el botón en la interfaz.
 </div>
 
 
@@ -425,78 +363,6 @@
 
 
 
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>objeto</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><a href="Objeto.html">Objeto</a></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">El objeto que se va a transferir.</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>personaje</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><a href="Personaje.html">Personaje</a></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">El personaje al que se le transfiere el objeto.</td>
-        </tr>
-
-    
-    </tbody>
-</table>
 
 
 
@@ -532,7 +398,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="personaje.js.html">personaje.js</a>, <a href="personaje.js.html#line50">line 50</a>
+        <a href="botones.js.html">botones.js</a>, <a href="botones.js.html#line17">line 17</a>
     </li></ul></dd>
     
 
@@ -555,35 +421,231 @@
 
 
 
-<h5>Throws:</h5>
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="ocultar"><span class="type-signature"></span>ocultar<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Oculta el botón en la interfaz.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="botones.js.html">botones.js</a>, <a href="botones.js.html#line25">line 25</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="rename"><span class="type-signature"></span>rename<span class="signature">(text)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Cambia el texto del botón.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
 
         
 
-<dl>
-    <dt>
-        <div class="param-desc">
-        Lanza una excepción si el objeto o el personaje no son válidos.
-        </div>
-    </dt>
-    <dd></dd>
-    <dt>
-        <dl>
-            <dt>
-                Type
-            </dt>
-            <dd>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>text</code></td>
+            
+
+            <td class="type">
+            
                 
 <span class="param-type">string</span>
 
 
-            </dd>
-        </dl>
-    </dt>
-    <dd></dd>
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">El nuevo texto para el botón.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="botones.js.html">botones.js</a>, <a href="botones.js.html#line34">line 34</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
 </dl>
 
 
-    
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Class: Personaje</title>
+    <title>JSDoc: Class: Animal</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Class: Personaje</h1>
+    <h1 class="page-title">Class: Animal</h1>
 
     
 
@@ -28,9 +28,9 @@
 
 <header>
     
-        <h2><span class="attribs"><span class="type-signature"></span></span>Personaje<span class="signature">(nombre, raza, clase)</span><span class="type-signature"></span></h2>
+        <h2><span class="attribs"><span class="type-signature"></span></span>Animal<span class="signature">(nombre, clase, reinoAnimal)</span><span class="type-signature"></span></h2>
         
-            <div class="class-description">Representa un personaje de la historia</div>
+            <div class="class-description">Clase que representa a un animal en el juego.</div>
         
     
 </header>
@@ -45,7 +45,7 @@
     
 
     
-    <h4 class="name" id="Personaje"><span class="type-signature"></span>new Personaje<span class="signature">(nombre, raza, clase)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="Animal"><span class="type-signature"></span>new Animal<span class="signature">(nombre, clase, reinoAnimal)</span><span class="type-signature"></span></h4>
     
 
     
@@ -53,7 +53,7 @@
 
 
 <div class="description">
-    Constructor de la claseInicializa los atributos de la clase
+    Crea una instancia de la clase Animal.
 </div>
 
 
@@ -97,7 +97,7 @@
             <td class="type">
             
                 
-<span class="param-type">String</span>
+<span class="param-type">string</span>
 
 
             
@@ -111,34 +111,7 @@
                 </td>
             
 
-            <td class="description last">El nombre del personaje</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>raza</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">String</span>
-
-
-            
-            </td>
-
-            
-
-            
-                <td class="default">
-                
-                </td>
-            
-
-            <td class="description last">Raza del personaje</td>
+            <td class="description last">El nombre del animal.</td>
         </tr>
 
     
@@ -151,7 +124,10 @@
             <td class="type">
             
                 
-<span class="param-type">String</span>
+<span class="param-type">string</span>
+|
+
+<span class="param-type">null</span>
 
 
             
@@ -167,7 +143,36 @@
                 </td>
             
 
-            <td class="description last">Clase del personaje</td>
+            <td class="description last">La clase a la que pertenece el animal (opcional).</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>reinoAnimal</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                    Mamífero
+                
+                </td>
+            
+
+            <td class="description last">El reino al que pertenece el animal (por defecto, 'Mamífero').</td>
         </tr>
 
     
@@ -208,7 +213,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="personaje.js.html">personaje.js</a>, <a href="personaje.js.html#line6">line 6</a>
+        <a href="animal.js.html">animal.js</a>, <a href="animal.js.html#line7">line 7</a>
     </li></ul></dd>
     
 
@@ -242,6 +247,17 @@
     </div>
 
     
+        <h3 class="subsection-title">Extends</h3>
+
+        
+
+
+    <ul>
+        <li><a href="Personaje.html">Personaje</a></li>
+    </ul>
+
+
+    
 
     
 
@@ -249,7 +265,7 @@
         <h3 class="subsection-title">Classes</h3>
 
         <dl>
-            <dt><a href="Personaje.html">Personaje</a></dt>
+            <dt><a href="Animal.html">Animal</a></dt>
             <dd></dd>
         </dl>
     
@@ -351,6 +367,11 @@
 
     
 
+    
+    <dt class="tag-overrides">Overrides:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="Personaje.html#coger">Personaje#coger</a>
+    </li></ul></dd>
     
 
     
@@ -511,6 +532,11 @@
 
     
 
+    
+    <dt class="tag-overrides">Overrides:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="Personaje.html#pasar">Personaje#pasar</a>
+    </li></ul></dd>
     
 
     

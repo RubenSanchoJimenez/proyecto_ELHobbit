@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: script.js</title>
+    <title>JSDoc: Source: enano.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: script.js</h1>
+    <h1 class="page-title">Source: enano.js</h1>
 
     
 
@@ -26,44 +26,31 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>import { Rama } from './rama.js'
-import { Boton } from './botones.js'
-
+            <pre class="prettyprint source linenums"><code>import { razaEnano as raza } from './razas.js'
+import { Personaje } from './personaje.js'
 /**
- * Realizamos las declaraciones corresposndientes y asignamos los botones
+ * Clase que representa a un enano en el juego.
+ * @extends Personaje
  */
+export class Enano extends Personaje {
+  /**
+     * El nombre del rey enano (propiedad estática).
+     * @type {string}
+     */
+  static rey = ' Thorin Escudo de roble'
 
-const rama1 = new Rama()
-const rama2 = new Rama()
-const rama3 = new Rama()
-const boton1 = new Boton('1')
-const boton2 = new Boton('2')
-const boton3 = new Boton('3')
-
-boton1.mostrar()
-boton1.rename('Rama 1')
-boton2.mostrar()
-boton2.rename('Rama 2')
-boton3.mostrar()
-boton3.rename('Rama 3')
-boton1.avanzarRama(() => {
-  rama1.rama1()
-  boton2.ocultar()
-  boton3.ocultar()
-  boton1.rename('continuar')
-})
-boton2.avanzarRama(() => {
-  rama2.rama2()
-  boton2.ocultar()
-  boton3.ocultar()
-  boton1.rename('continuar')
-})
-boton3.avanzarRama(() => {
-  rama3.rama3()
-  boton2.ocultar()
-  boton3.ocultar()
-  boton1.rename('continuar')
-})
+  #colorBarba = null
+  /**
+     * Crea una instancia de la clase Enano.
+     * @param {string} nombre - El nombre del enano.
+     * @param {string|null} clase - La clase a la que pertenece el enano (opcional).
+     * @param {string} colorBarba - El color de la barba del enano (por defecto, 'Blanca').
+     */
+  constructor (nombre, clase = null, colorBarba = 'Blanca') {
+    super(nombre, raza, clase)
+    this.#colorBarba = colorBarba
+  }
+}
 </code></pre>
         </article>
     </section>

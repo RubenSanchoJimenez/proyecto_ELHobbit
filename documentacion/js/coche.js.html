@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: personaje.js</title>
+    <title>JSDoc: Source: coche.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: personaje.js</h1>
+    <h1 class="page-title">Source: coche.js</h1>
 
     
 
@@ -28,53 +28,56 @@
         <article>
             <pre class="prettyprint source linenums"><code>// Clase Personaje
 import { Objeto } from './objeto.js'
+import { Personaje } from './personaje.js'
 /**
- * Representa un personaje de la historia
+ * Clase que representa un coche en el juego.
  */
-export class Personaje {
+export class Coche {
   #nombre = null // La # hace a un atributo privado
-  #raza = null
+  #anio = null
   #clase = null
   #inventario = new Set()
   /**
-     * Constructor de la clase
-     * Inicializa los atributos de la clase
-     * @param {String} nombre El nombre del personaje
-     * @param {String} raza Raza del personaje
-     * @param {String} clase Clase del personaje
+     * Crea una instancia de la clase Coche.
+     * @param {string} nombre - El nombre del coche.
+     * @param {string|null} clase - La clase a la que pertenece el coche (opcional).
+     * @param {number} anio - El año de fabricación del coche.
      */
-  constructor (nombre, raza, clase = null) {
+  constructor (nombre, clase = null, anio) {
     this.#nombre = nombre
-    this.#raza = raza
+    this.#anio = anio
     this.#clase = clase
   }
 
-  hablar (frase) {
+  /**
+     * Arranca el coche y muestra un mensaje en la historia.
+     */
+  arrancar () {
     // Crear un elemento de párrafo
     const dialogo = document.createElement('p')
-    dialogo.innerHTML = `&lt;span style="color: white; padding: 5px; border-radius: 5px; background-color: rgb(182, 123, 56);">${this.#nombre} :&lt;/span> "${frase}"`
+    dialogo.innerHTML = `&lt;span style="color: white; padding: 5px; border-radius: 5px;">${this.#nombre} :&lt;/span> "${'BRRRNNN'}"`
 
     // Obtener el elemento divHistoria del documento HTML
     const divHistoria = document.getElementById('divHistoria')
 
     // Agregar el elemento de párrafo al div
-    divHistoria.appendChild(dialogo)
+    divHistoria.appendChild('brrrrrrnnnn')
   }
 
   /**
-     * Se asigna objeto a personaje
-     * @param {Objeto} objeto
+     * Agrega un objeto al inventario del coche.
+     * @param {Objeto} objeto - El objeto a agregar al inventario del coche.
      */
   coger (objeto) {
     this.#inventario.add(objeto)
   }
 
   /**
-    * Transfiere un objeto del personaje actual a otro personaje.
-    * @param {Objeto} objeto - El objeto que se va a transferir.
-    * @param {Personaje} personaje - El personaje al que se le transfiere el objeto.
-    * @throws {string} Lanza una excepción si el objeto o el personaje no son válidos.
-    */
+     * Transfiere un objeto del coche a un personaje.
+     * @param {Objeto} objeto - El objeto a transferir.
+     * @param {Personaje} personaje - El personaje al que se le transfiere el objeto.
+     * @throws {string} Lanza una excepción si el objeto o el personaje no son válidos.
+     */
   pasar (objeto, personaje) {
     if (!(objeto instanceof Objeto)) {
       throw 'Objeto inválido'
